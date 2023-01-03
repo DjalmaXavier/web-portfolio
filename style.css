@@ -1,0 +1,38 @@
+body {
+  background-image: linear-gradient(to left, #73E0E6, #BBE7EA)
+}
+
+.introduction {
+  display:contents;
+  text-align: center;
+}
+
+.range {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+#minNum {
+  margin-top: 10%;
+}
+
+#maxNum {
+  margin-top: 10%;
+}
+
+.boxButton {
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.resultBox {
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#numSort {
+  font-size: 50px;
+}
