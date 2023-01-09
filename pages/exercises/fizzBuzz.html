@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/scripts/fizzBuzz.js"></script>
+  <link rel="stylesheet" href="/style.css">
+  <title>Fizz & Buzz</title>
+</head>
+<div class="container">
+      <nav>
+          <a href="/index.html" class="navHeader">Home</a>
+          <a href="/pages/exercises.html" class="navHeader">Exercises</a>
+          <a href="/pages/aboutme.html" class="navHeader">About me</a>
+      </nav>  
+    </div>
+</div>
+<div class="introduction">
+  <h1>Fizz & Buzz</h1>
+  <h2>Choose a number and see if it is divisible by 3 or 5!!</h2>
+</div>
+<div class="conditions">
+  <li>If it is divisible by 3, Fizz will appear</li>
+  <li>If it is divisible by 5, Buzz will appear</li>
+  <li>If it is divisible by 3 and 5, FizzBuzz will appear</li>
+</div>
+<div class="range">
+</div>
+<div class="boxButton">
+   <input type="number" id="numFB" onkeypress=" return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+   <button onclick= fizzBuzz()>Generate</button>
+</div>
+<div class="resultBox">
+  <p id="numResult"></p>
+</div>
+</html>
