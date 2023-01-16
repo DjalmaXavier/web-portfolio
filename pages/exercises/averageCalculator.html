@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en_US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/scripts/mediaNota.js"></script>
+  <link rel="stylesheet" href="/style.css">
+  <title>Average Calculator</title>
+</head>
+
+<div class="container">
+  <nav>
+    <a href="/index.html" class="navHeader">Home</a>
+    <a href="/pages/exercises.html" class="navHeader">Exercises</a>
+    <a href="/pages/aboutme.html" class="navHeader">About me</a>
+  </nav>
+</div>
+</div>
+<div class="introduction">
+  <h1>Average Calculator</h1>
+  <h2>Get the avarage note of a student.</h2>
+</div>
+<div class="conditions">
+  <li>Put the notes in the box</li>
+  <li>Click in calculate to get the result</li>
+</div>
+<div class="boxButton">
+<input 
+type="number" 
+id="numP" 
+min="0"
+max="100" 
+onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+<div id="numbers">
+</div>
+<p id="output"></p>
+<button onclick="getNumber()">Add number</button>
+<button onclick="removeNumber()">Remove last number</button>
+<button onclick="averageResult()">Calculate</button>
+</div>
+<div class="resultBox">
+  <p id="points"></p>
+  <p id="numResult"></p>
+</div>
+</html>
