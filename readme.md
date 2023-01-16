@@ -10,5 +10,5 @@ So far, the following exercises have been performed:
 - Fizz & Buzz
 (link to the exercise : https://www.youtube.com/watch?v=OCKbXAepZyk)
 
-
-
+- Average Calculator
+(link to the exercise : https://youtu.be/i6Oi-YtXnAU?t=7744)
