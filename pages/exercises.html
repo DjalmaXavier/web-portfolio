@@ -1,24 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%; width: 100%;">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
   <title>Exercises</title>
 </head>
+
 <body>
-  <div class="container">
-      <nav>
-        <a href="/index.html" class="navHeader">Home</a>
-        <a href="./exercises.html" class="navHeader">Exercises</a>
-        <a href="/pages/aboutme.html" class="navHeader">About me</a>
-      </nav>  
-  </div>
-      <div class="exercises">
-        <a href="./exercises/randomicNumbers.html" class="navExercises">Randomic Numbers</a>
-        <a href="./exercises/fizzBuzz.html" class="navExercises">Fizz & Buzz</a>
-        <a href="./exercises/averageCalculator.html" class="navExercises">Avarage Calculator</a>
-      </div>  
+  <header class="flex items-center justify-between pt-15 pb-15 relative z-10 mar-auto ">
+    <nav class="flex">
+      <a href="../index.html" class="no-underline pl-15 pr-15">Home</a>
+    </nav>
+    <nav class="flex jc-end">
+      <a href="#" class="pr-15 pl-15 margin-right margin-bottom no-underline">Exercises</a>
+      <a href="./aboutme.html" class="pl-15 pr-15 no-underline">About me</a>
+    </nav>
+  </header>
+  <section>    
+    <div class="relative z-10 flex jc-center">
+      <h1>Exercises</h1>
+    </div>
+    <div class="relative z-position jc-center items-center flex" style="flex-direction: column;">
+      <a href="./exercises/randomicNumbers.html" class="">Randomic Numbers</a>
+      <a href="./exercises/fizzBuzz.html" class="">Fizz & Buzz</a>
+      <a href="./exercises/averageCalculator.html" class="">Avarage Calculator</a>
+    </div>
+  </section>
+  <footer>
+    <img src="../sources/img/zoddex-WGoGhVqtWyc-unsplash.jpg" alt="Under construction symbol" class="w-full absolute bottom-reduce">
+  </footer>
 </body>
+
 </html>

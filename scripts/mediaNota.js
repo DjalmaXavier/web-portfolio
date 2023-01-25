@@ -1,6 +1,6 @@
 /*
 Obter a média a partir de um array
-0-59 : F
+0-59 : E
 60 - 69 : D
 70 - 79 : C
 80 -  89 : B
@@ -66,19 +66,19 @@ const averageResult = function () {
 
   if (x <= 59) {
     return (document.getElementById("numResult").innerHTML =
-      "The student had an average of: " + x + ",resulting in E");
+      "The student had an average of: " + x + ",resulting in <span style='color: red;'>E</span>");
   } else if (x <= 69) {
     return (document.getElementById("numResult").innerHTML =
-      "The student had an average of: " + x + ",resulting in D");
+      "The student had an average of: " + x + ",resulting in <span style='color: #f77802;'>D</span>");
   } else if (x <= 79) {
     return (document.getElementById("numResult").innerHTML =
-      "The student had an average of: " + x + ",resulting in C");
+      "The student had an average of: " + x + ",resulting in <span style='color: yellow;'>C</span>");
   } else if (x <= 89) {
     return (document.getElementById("numResult").innerHTML =
-      "The student had an average of: " + x + ",resulting in B");
+      "The student had an average of: " + x + ",resulting in <span style='color: greenyellow;'>B</span>");
   } else if (x <= 100) {
     return (document.getElementById("numResult").innerHTML =
-      "The student had an average of: " + x + ",resulting in A");
+      "The student had an average of: " + x + ",resulting in <span style='color: #55fc55;'>A</span>");
   } else {
     return console.log("You entered a value outside the parameters");
   }

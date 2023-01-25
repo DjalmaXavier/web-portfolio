@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en_US">
+<html lang="en_US" style="height: 100%; width: 100%;">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="/scripts/randomGen.js"></script>
   <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <title>Randomic Numbers</title>
 </head>
-<div class="container">
-      <nav>
-          <a href="/index.html" class="navHeader">Home</a>
-          <a href="/pages/exercises.html" class="navHeader">Exercises</a>
-          <a href="/pages/aboutme.html" class="navHeader">About me</a>
-      </nav>  
-    </div>
-</div>
-<div class="introduction">
-  <h1>Randomic Numbers</h1>
-  <h2>Put a minimum value and a max value in the boxes below, and press "Generate" to generate a randomized number</h2>
-</div>
-<div class="range">
-    <input type="number" id="minNum" min="1" value= "0" onkeypress=" return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">Min Value
-    <input type="number" id="maxNum" min="1" value= "10" onkeypress=" return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">Max Value
-</div>
-<div class="boxButton">
-   <button onclick= getRandom()>Generate</button>
-</div>
-<div class="resultBox">
-  <p id="numSort">0</p>
-  <p id="maxMin"></p>
-</div>
+<header class="flex items-center justify-between pt-15 pb-15 relative z-10 mar-auto ">
+  <nav class="flex">
+    <a href="/index.html" class="no-underline pl-15 pr-15">Home</a>
+  </nav>
+  <nav class="flex jc-end">
+    <a href="/pages/exercises.html" class="pr-15 pl-15 margin-right margin-bottom no-underline">Exercises</a>
+    <a href="/pages/aboutme.html" class="pl-15 pr-15 no-underline">About me</a>
+  </nav>
+</header>
+<section class="flex flow-cnw items-center mar-auto mx-w">
+    <h1>Randomic Numbers</h1>
+    <p class="jc-center">Put a minimum value and a max value in the boxes below, and press "Generate" to generate a randomized number</p>
+    <input type="number" id="minNum" min="1" value="0"
+      onkeypress=" return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">Min
+    Value
+    <input type="number" id="maxNum" min="1" value="10"
+      onkeypress=" return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">Max
+    Value
+    <button onclick=getRandom()>Generate</button>
+    <p id="numSort">0</p>
+    <p id="maxMin"></p>
+</section>
+<footer>
+  <img src="/sources/img/zoddex-WGoGhVqtWyc-unsplash.jpg" alt="Under construction symbol" class="w-full absolute bottom-reduce">
+</footer>
+
 </html>

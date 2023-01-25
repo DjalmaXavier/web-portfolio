@@ -1,37 +1,48 @@
 <!DOCTYPE html>
-<html lang="en_US">
+<html lang="en_US" style="height: 100%; width: 100%;">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="/scripts/fizzBuzz.js"></script>
   <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <title>Fizz & Buzz</title>
 </head>
-<div class="container">
-      <nav>
-          <a href="/index.html" class="navHeader">Home</a>
-          <a href="/pages/exercises.html" class="navHeader">Exercises</a>
-          <a href="/pages/aboutme.html" class="navHeader">About me</a>
-      </nav>  
-    </div>
-</div>
-<div class="introduction">
+<header class="flex items-center justify-between pt-15 pb-15 relative z-10 mar-auto">
+  <nav class="flex">
+    <a href="/index.html" class="no-underline pl-15 pr-15">Home</a>
+  </nav>
+  <nav class="flex jc-end">
+    <a href="/pages/exercises.html" class="pr-15 pl-15 margin-right margin-bottom no-underline">Exercises</a>
+    <a href="/pages/aboutme.html" class="pl-15 pr-15 no-underline">About me</a>
+  </nav>
+</header>
+<section>
+  <div class="flex flow-cnw items-center mar-auto mx-w">
   <h1>Fizz & Buzz</h1>
   <h2>Choose a number and see if it is divisible by 3 or 5!!</h2>
+  </div>
+<div class="flex flow-cnw pl-10 items-center mar-auto mx-w">
+  <p>Rules</p>
+  <li>If it is divisible by 3, <span style="color:red">Fizz</span> will appear</li>
+  <li>If it is divisible by 5, <span style="color: blue;">Buzz</span> will appear</li>
+  <li>If it is divisible by 3 and 5, <span style="color:red">Fizz</span><span style="color: blue;">Buzz</span> will appear</li>
 </div>
-<div class="conditions">
-  <li>If it is divisible by 3, Fizz will appear</li>
-  <li>If it is divisible by 5, Buzz will appear</li>
-  <li>If it is divisible by 3 and 5, FizzBuzz will appear</li>
+</section>
+<div class="flex jc-center margin-top-56">
+  <input type="number" id="numFB"
+    onkeypress=" return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+    value="0">
+  <button onclick=fizzBuzz() class="margin-left-20">Generate</button>
 </div>
-<div class="range">
-</div>
-<div class="boxButton">
-   <input type="number" id="numFB" onkeypress=" return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" value="0">
-   <button onclick= fizzBuzz()>Generate</button>
-</div>
-<div class="resultBox">
+<div class="flex jc-center margin-top">
   <p id="numResult"></p>
 </div>
+<footer>
+  <img src="/sources/img/zoddex-WGoGhVqtWyc-unsplash.jpg" alt="Under construction symbol" class="w-full absolute bottom-reduce">
+</footer>
 </html>

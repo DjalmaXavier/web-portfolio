@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>About me</title>
-  </head>
-  <body>
-    <div class="container">
-      <nav>
-        <a href="/index.html" class="navHeader">Home</a>
-        <a href="./exercises.html" class="navHeader">Exercises</a>
-        <a href="./aboutme.html" class="navHeader">About me</a>
-      </nav>
+<html lang="en" style="height: 100%; width: 100%;">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <title>About me</title>
+</head>
+<header class="flex items-center justify-between pt-15 pb-15 relative z-10 mar-auto ">
+  <nav class="flex">
+    <a href="../index.html" class="no-underline pl-15 pr-15">Home</a>
+  </nav>
+  <nav class="flex jc-end">
+    <a href="./exercises.html" class="pr-15 pl-15 margin-right margin-bottom no-underline">Exercises</a>
+    <a href="#" class="pl-15 pr-15 no-underline">About me</a>
+  </nav>
+</header>
+<section>
+  <div class="flex">
+    <img src="/sources/img/lo-fi-concept-animate.svg" alt="lofi-programmer" srcset="" style="width: 600px;">
+    <div class="flex jc-center flow-cnw">
+      <h1>Djalma Xavier</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque suscipit, in expedita dolor vitae provident sed aperiam? Aspernatur voluptates officiis consequuntur eveniet. Odit laborum perspiciatis possimus cumque odio esse repellat?</p>
     </div>
-    <div class="homeBody">
-      <img
-        src="../sources/img/maint.png"
-        alt="Under construction symbol"
-        width="300px"
-      />
-      <p id="underId">Under construction</p>
-    </div>
-  </body>
+  </div>
+</section>
+<footer>
+  <img src="/sources/img/zoddex-WGoGhVqtWyc-unsplash.jpg" alt="Blue Wave" class="w-full absolute bottom-reduce">
+</footer>
+</body>
+
 </html>

@@ -1,47 +1,63 @@
 <!DOCTYPE html>
-<html lang="en_US">
-
+<html lang="en_US" style="height: 100%; width: 100%;">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="/scripts/mediaNota.js"></script>
   <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <title>Average Calculator</title>
 </head>
-
-<div class="container">
-  <nav>
-    <a href="/index.html" class="navHeader">Home</a>
-    <a href="/pages/exercises.html" class="navHeader">Exercises</a>
-    <a href="/pages/aboutme.html" class="navHeader">About me</a>
-  </nav>
-</div>
-</div>
-<div class="introduction">
-  <h1>Average Calculator</h1>
-  <h2>Get the avarage note of a student.</h2>
-</div>
-<div class="conditions">
-  <li>Put the notes in the box</li>
-  <li>Click in calculate to get the result</li>
-</div>
-<div class="boxButton">
-<input 
-type="number" 
-id="numP" 
-min="0"
-max="100" 
-onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
-<div id="numbers">
-</div>
-<p id="output"></p>
-<button onclick="getNumber()">Add number</button>
-<button onclick="removeNumber()">Remove last number</button>
-<button onclick="averageResult()">Calculate</button>
-</div>
-<div class="resultBox">
-  <p id="points"></p>
-  <p id="numResult"></p>
-</div>
+<body>
+  <header class="flex items-center justify-between pt-15 pb-15 relative z-10 mar-auto">
+    <nav class="flex">
+      <a href="/index.html" class="no-underline pl-15 pr-15">Home</a>
+    </nav>
+    <nav class="flex jc-end">
+      <a href="/pages/exercises.html" class="pr-15 pl-15 margin-right margin-bottom no-underline">Exercises</a>
+      <a href="/pages/aboutme.html" class="pl-15 pr-15 no-underline">About me</a>
+    </nav>
+  </header>
+  <section>
+  <div class="flex flow-cnw items-center mx-auto">
+    <h1>Average Calculator</h1>
+    <h2>Get the avarage note of a student.</h2>
+  </div>
+  <div class="flex flow-cnw items-center mx-auto">
+    <p>How to use</p>
+    <li>Put the notes in the box</li>
+    <li>Click in calculate to get the result</li>
+    <div class="flex items-center ">
+      <ol><span style='color: red;'>E</span> = 0 - 59</ol>
+      <ol><span style='color: #f77802;'>D</span> = 60 - 69</ol>
+      <ol><span style='color: yellow;'>C</span> = 70 - 79</ol>
+      <ol><span style='color: greenyellow;'>B</span> = 80 -  89</ol>
+      <ol><span style='color: #55fc55;'>A</span> = 90 - 100</ol>
+    </div>
+  </div>
+</section>
+  <div class="flex jc-center margin-top">
+    <input type="number" id="numP" min="0" max="100"
+      onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+  </div>
+    <div class="flex jc-center">
+    <p id="output"></p>
+    </div>
+    <div class="flex jc-center">
+    <button onclick="getNumber()" class="margin-right">Add number</button>
+    <button onclick="removeNumber()" class="margin-right">Remove last number</button>
+    <button onclick="averageResult()" class="">Calculate</button>
+    </div>
+</section>
+  <div class="flex jc-center margin-top">
+    <p id="points"></p>
+    <p id="numResult"></p>
+  </div>
+  <footer>
+    <img src="/sources/img/zoddex-WGoGhVqtWyc-unsplash.jpg" alt="Under construction symbol" class="w-full absolute bottom-reduce">
+  </footer>
+</body>
 </html>
