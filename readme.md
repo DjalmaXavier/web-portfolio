@@ -1,6 +1,6 @@
 Hello World!
 
-This web page will be my exercise repository.
+This repository is for my web-page, which will be used as a portfolio.
 
 So far, the following exercises have been performed:
 
