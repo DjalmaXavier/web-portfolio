@@ -1,6 +1,6 @@
 Hello World!
 
-This repository is for my web-page, which will be used as a portfolio.
+This repository is for my  vanilla web-page( Only HTML, CSS and JS), which will be used as a portfolio.
 
 So far, the following exercises have been performed:
 
